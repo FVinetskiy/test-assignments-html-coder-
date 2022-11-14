@@ -1,0 +1,10 @@
+include ../../../views/helpers/mixins.pug
+
+.header
+    .header__top
+        input(type='text' placeholder='Поиск по запросу ').header__input
+        include ../tabs/tabs
+        a(download href="xxx.csv").header__button-download Скачать .CSV
+        button.header__button-request Добавить запрос
+    include ../banner/banner
+    

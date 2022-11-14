@@ -1,0 +1,39 @@
+.banner {
+    background: rgba(248, 231, 28, 0.15);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 0;
+    margin-bottom: 30px;
+
+    &__wrap-info {
+        margin-right: 20px;
+        span {
+            font-size: 12px;
+            color: $main;
+            text-align: center;
+            padding: 4px 6px;
+            display: inline-block;
+            &:first-child {
+                background: $base-color;
+                border-radius: 5px 0px 0px 5px;
+            }
+            &:last-child {
+                background: $white;
+                border-radius: 0px 5px 5px 0px;
+            }
+        }
+    }
+
+    &__img {
+        margin-right: 10px;
+    }
+
+    &__text {
+        color: $main;
+        opacity: 0.5;
+        font-size: 14px;
+        margin: 0;
+    }
+}

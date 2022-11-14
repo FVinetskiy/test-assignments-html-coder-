@@ -1,0 +1,39 @@
+.check {
+    display: inline-block;
+    cursor: pointer;
+
+    &--right {
+        margin-right: 18px;
+    }
+    &__input {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+    &__box {
+        display: block;
+        width: 20px;
+        height: 20px;
+        overflow: hidden;
+        background-color: $border-button;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 5px;
+    }
+    &__input {
+        &:checked + .check__box {
+            background-color: $desk-back;
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-image: url('../../../img/svg/arr.svg');
+        }
+        &:focus + .check__box {
+            box-shadow:0 0 0 1px $black;
+        }
+    }
+}
+
+
+

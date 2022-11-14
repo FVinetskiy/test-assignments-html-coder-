@@ -1,0 +1,47 @@
+.header {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__input {
+        background: $white;
+        border: 1px solid $border-button;
+        border-radius: 5px;
+        width: 240px;
+        height: 40px;
+        color: $main;
+        font-size: 16px;
+        padding: 0px 14px;
+        @include placeholder {
+            opacity: 0.7;
+        }
+
+        &:disabled {
+            color: gray;
+        }
+    }
+
+    &__button-download {
+        font-size: 16px;
+        color: $main;
+        height: 40px;
+        padding: 0 20px;
+        background: transparent;
+        border-radius: 5px;
+        border: 1px solid $border-button;
+        margin-right: 20px;
+        line-height: 40px;
+        text-decoration: none;
+    }
+
+    &__button-request {
+        background: $mark;
+        box-shadow: 0px 3px 7px $mark-shadow;
+        border-radius: 5px;
+        font-size: 16px;
+        color: $white;
+        padding: 0 20px;
+        border: 0;
+    }
+}

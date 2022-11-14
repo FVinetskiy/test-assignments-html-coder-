@@ -1,0 +1,12 @@
+.show-content { 
+    display: flex;
+    list-style: none;
+    &__item {
+        height: 50px;
+        width: 44.36px;
+        flex:0 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
