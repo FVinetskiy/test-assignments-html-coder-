@@ -2,7 +2,8 @@
     .table__column-main
         .table__row
             .table__row-list
-                +checkbox('check--right')
+                #js-checkAll(style={'background-color': 'red'})
+                    +checkbox('check--right')
                 button.table__button
                     img(src="../img/svg/trash.svg", alt="")
                 button.table__button
@@ -14,7 +15,7 @@
         +table-row('active' , true, 'Тинькофф банк отзывы')
         +table-row('' , false , 'Тинькофф банк ')
 
-        .table__show-block
+        .table__show-block.js-show-block
             button.table__show-button Просмотреть Топ-10
 
         +table-row('active' , false , 'Тинькофф банк отзывы')
@@ -26,36 +27,36 @@
 
     .table__column
         +data({'items':[{
-            'number'         : '62',
+            'number'         : '25.06',
             'description'    : '30',
             },{
-            'number'         : '3',
+            'number'         : '26.06',
             },{
-            'number'         : '97',
+            'number'         : '27.06',
             },{
-            'number'         : '1',
+            'number'         : '28.06',
             },{
-            'number'         : '1',
+            'number'         : '29.06',
             },{
-            'number'         : '1',
+            'number'         : '30.06',
             },{
-            'number'         : '1',
+            'number'         : '01.07',
             },{
-            'number'         : '1',
+            'number'         : '02.07',
             },{
-            'number'         : '1',
+            'number'         : '03.07',
             },{
-            'number'         : '1',
+            'number'         : '04.07',
             },{
-            'number'         : '1',
+            'number'         : '05.07',
             },{
-            'number'         : '1',
+            'number'         : '06.07',
             },{
-            'number'         : '1',
+            'number'         : '07.07',
             },{
-            'number'         : '1',
+            'number'         : '08.07',
             },{
-            'number'         : '1',
+            'number'         : '09.07',
             }
         ]},'date-list__item--gray')
 
@@ -128,12 +129,12 @@
             'number'         : '1',
             }
         ]}, 'date-list__item--dawn')
-
-        +show-content()
-        +show-content()
-        +show-content()
-        +show-content()
-        +show-content()
+        .js-show-block
+            +show-content()
+            +show-content()
+            +show-content()
+            +show-content()
+            +show-content()
 
         +data({'items':[{
             'number'         : '62',

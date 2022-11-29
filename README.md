@@ -1,7 +1,7 @@
 ## Тестовое задание на позицию 'верстальщик'
 * https://github.com/appbooster/test-assignments/blob/master/tasks/html-css.md
 
-## :hammer_and_wrench: Установка
+## Установка
 * установите [NodeJS](https://nodejs.org/en/)
 * установите глобально:
     * [Yarn](https://yarnpkg.com/getting-started): ```npm i -g yarn```
@@ -12,7 +12,5 @@
 * введите ```yarn set version berry```
 * скачайте необходимые зависимости: ```yarn```
 * чтобы начать работу, введите команду: ```yarn run dev``` (режим разработки)
-<<<<<<< HEAD
 * чтобы собрать проект, введите команду ```yarn run build``` (режим сборки)
-=======
 * чтобы собрать проект, введите команду ```yarn run build``` (режим сборки)

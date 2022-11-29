@@ -33,6 +33,12 @@
         margin-right: 20px;
         line-height: 40px;
         text-decoration: none;
+        transition: 0.1s linear;
+        &:hover {
+            background: $mark;
+            box-shadow: 0px 3px 7px $mark-shadow;
+            color: $white;
+        }
     }
 
     &__button-request {

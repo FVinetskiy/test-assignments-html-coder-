@@ -1,13 +1,13 @@
-modules.define('checkbox', ['i-bem-dom'], function(provide, bemDom) {
+var boxes = document.getElementsByClassName('js-show-block');
+var height = 0;
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
+for( var i = 0; i < boxes.length; i++ ){
+    var current_height = boxes[i].offsetHeight;
+    if(current_height > height) {
+        height = current_height;
+    }        
+}
 
-});
+for( var i = 0; i < boxes.length; i++ ){
+    boxes[i].style.height = height + 'px';       
+}

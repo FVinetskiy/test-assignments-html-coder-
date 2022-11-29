@@ -1,13 +1,7 @@
-modules.define('table', ['i-bem-dom'], function(provide, bemDom) {
+var stars = document.getElementsByClassName("js-star");
 
-provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-        js: {
-            inited: function() {
-                
-            }
-        }
-    }
-}));
-
-});
+for (var i = 0, len = stars.length; i < len; i++) {
+    stars [i].addEventListener("click", function() {
+        this.classList.toggle("active");
+    });
+}
