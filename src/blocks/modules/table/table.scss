@@ -1,9 +1,23 @@
 .table {
     border:1px solid $ligth-border;
     display: flex;
-
+    &__show {
+        // display: none;
+        opacity: 0;
+        position: absolute;
+        &.active {
+            opacity: 1;
+            position: static;
+        }
+    }
     &__show-block {
         padding: 20px 54px;
+        opacity: 0;
+        position: absolute;
+        &.active {
+            opacity: 1;
+            position: static;
+        }
     }
     &__show-button {
         color: $main;

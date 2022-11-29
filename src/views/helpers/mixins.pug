@@ -1,6 +1,6 @@
 mixin checkbox(className,idName)
-    label.check(class=className)(id=idName)
-        input(type="checkbox").check__input
+    label.check(class=className)
+        input(type="checkbox").check__input.check__input--main(id=idName)
         span.check__box
 
 mixin table-row(className , star , text)

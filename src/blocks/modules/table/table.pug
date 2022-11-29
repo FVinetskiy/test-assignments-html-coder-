@@ -2,8 +2,8 @@
     .table__column-main
         .table__row
             .table__row-list
-                #js-checkAll(style={'background-color': 'red'})
-                    +checkbox('check--right')
+           
+                +checkbox('check--right','js-checkAll')
                 button.table__button
                     img(src="../img/svg/trash.svg", alt="")
                 button.table__button
@@ -12,18 +12,30 @@
                     img(src="../img/svg/rocket.svg", alt="")
             .table__last 
                 span Оценка частотн.
-        +table-row('active' , true, 'Тинькофф банк отзывы')
-        +table-row('' , false , 'Тинькофф банк ')
-
-        .table__show-block.js-show-block
+        +table-row('' , true, 'Тинькофф банк отзывы')
+        .table__show-block.js-show-block.js-height
             button.table__show-button Просмотреть Топ-10
-
-        +table-row('active' , false , 'Тинькофф банк отзывы')
-        +table-row('' , true , 'Тинькофф банк')
-        +table-row('active' , true, 'Тинькофф банк отзывы')
         +table-row('' , false , 'Тинькофф банк ')
-        +table-row('active' , false , 'Тинькофф банк отзывы')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
+        +table-row('' , false , 'Тинькофф банк отзывы')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
         +table-row('' , true , 'Тинькофф банк')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
+        +table-row('' , true, 'Тинькофф банк отзывы')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
+        +table-row('' , false , 'Тинькофф банк ')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
+        +table-row('' , false , 'Тинькофф банк отзывы')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
+        +table-row('' , true , 'Тинькофф банк')
+        .table__show-block.js-show-block.js-height
+            button.table__show-button Просмотреть Топ-10
 
     .table__column
         +data({'items':[{
@@ -59,7 +71,6 @@
             'number'         : '09.07',
             }
         ]},'date-list__item--gray')
-
         +data({'items':[{
             'number'         : '62',
             'description'    : '30',
@@ -96,6 +107,9 @@
             'number'         : '1',
             }
         ]}, 'date-list__item--up')
+        .table__show.js-height
+            +show-content()
+            +show-content()
         +data({'items':[{
             'number'         : '62',
             'wellup'         : '1',
@@ -129,7 +143,7 @@
             'number'         : '1',
             }
         ]}, 'date-list__item--dawn')
-        .js-show-block
+        .table__show.js-height
             +show-content()
             +show-content()
             +show-content()
@@ -169,6 +183,9 @@
             'number'         : '1',
             }
         ]})
+        .table__show.js-height
+            +show-content()
+            +show-content()
         +data({'items':[{
             'number'         : '62',
             'wellup'         : '1',
@@ -202,7 +219,9 @@
             'number'         : '1',
             }
         ]})
-
+        .table__show.js-height
+            +show-content()
+            +show-content()
         +data({'items':[{
             'number'         : '62',
             'wellup'         : '1',
@@ -236,6 +255,10 @@
             'number'         : '1',
             }
         ]})
+        .table__show.js-height
+            +show-content()
+            +show-content()
+            +show-content()
         +data({'items':[{
             'number'         : '62',
             'wellup'         : '1',
@@ -269,6 +292,10 @@
             'number'         : '1',
             }
         ]})
+        .table__show.js-height
+            +show-content()
+            +show-content()
+            +show-content()
         +data({'items':[{
             'number'         : '62',
             'wellup'         : '1',
@@ -302,6 +329,10 @@
             'number'         : '1',
             }
         ]})
+        .table__show.js-height
+            +show-content()
+            +show-content()
+            +show-content()
         +data({'items':[{
             'number'         : '62',
             'wellup'         : '1',
@@ -335,3 +366,7 @@
             'number'         : '1',
             }
         ]})
+        .table__show.js-height
+            +show-content()
+            +show-content()
+            +show-content()
