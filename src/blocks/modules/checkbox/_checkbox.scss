@@ -27,7 +27,7 @@
             background-color: $desk-back;
             background-repeat: no-repeat;
             background-size: 10px 10px;
-            background-image: url('../../../img/svg/arr.svg');
+            background-image: url('../img/svg/arr.svg');
         }
         &:focus + .check__box {
             box-shadow:0 0 0 1px $black;
